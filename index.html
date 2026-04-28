@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gestoría Integral | Mandataria y Gestora Judicial</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: "Segoe UI", sans-serif;
+      color: #1f2933;
+      background: #f7f9fc;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #0f2f4a;
+      color: white;
+      padding: 18px 8%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    header h2 {
+      font-size: 20px;
+      letter-spacing: 0.5px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 24px;
+      font-size: 15px;
+    }
+
+    .hero {
+      min-height: 90vh;
+      background: linear-gradient(rgba(15,47,74,.78), rgba(15,47,74,.78)),
+        url("https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&w=1600&q=80");
+      background-size: cover;
+      background-position: center;
+      color: white;
+      display: flex;
+      align-items: center;
+      padding: 0 8%;
+    }
+
+    .hero-content {
+      max-width: 760px;
+    }
+
+    .hero h1 {
+      font-size: clamp(36px, 6vw, 66px);
+      line-height: 1.1;
+      margin-bottom: 22px;
+    }
+
+    .hero p {
+      font-size: 20px;
+      max-width: 650px;
+      margin-bottom: 32px;
+      color: #e8eef5;
+    }
+
+    .btn {
+      display: inline-block;
+      background: #25d366;
+      color: white;
+      padding: 15px 28px;
+      border-radius: 40px;
+      text-decoration: none;
+      font-weight: 600;
+      box-shadow: 0 10px 25px rgba(0,0,0,.25);
+    }
+
+    section {
+      padding: 80px 8%;
+    }
+
+    .section-title {
+      text-align: center;
+      margin-bottom: 45px;
+    }
+
+    .section-title h2 {
+      font-size: 36px;
+      color: #0f2f4a;
+      margin-bottom: 12px;
+    }
+
+    .section-title p {
+      color: #5d6b78;
+      max-width: 700px;
+      margin: auto;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 28px;
+    }
+
+    .card {
+      background: white;
+      padding: 34px;
+      border-radius: 22px;
+      box-shadow: 0 12px 35px rgba(15,47,74,.10);
+      transition: transform .3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-6px);
+    }
+
+    .card h3 {
+      color: #0f2f4a;
+      font-size: 24px;
+      margin-bottom: 18px;
+    }
+
+    .card ul {
+      padding-left: 20px;
+    }
+
+    .card li {
+      margin-bottom: 10px;
+    }
+
+    .about {
+      background: white;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 45px;
+      align-items: center;
+    }
+
+    .about h2 {
+      font-size: 38px;
+      color: #0f2f4a;
+      margin-bottom: 18px;
+    }
+
+    .about p {
+      margin-bottom: 16px;
+      color: #425466;
+    }
+
+    .highlight {
+      background: #eaf3fb;
+      padding: 24px;
+      border-left: 5px solid #0f2f4a;
+      border-radius: 14px;
+      margin-top: 20px;
+    }
+
+    .contact {
+      background: #0f2f4a;
+      color: white;
+      text-align: center;
+    }
+
+    .contact h2 {
+      font-size: 38px;
+      margin-bottom: 18px;
+    }
+
+    .contact p {
+      max-width: 650px;
+      margin: 0 auto 30px;
+      color: #dce7f0;
+    }
+
+    footer {
+      background: #081d2e;
+      color: #cbd5df;
+      text-align: center;
+      padding: 24px;
+      font-size: 14px;
+    }
+
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        gap: 12px;
+      }
+
+      nav a {
+        margin: 0 8px;
+        font-size: 14px;
+      }
+
+      .about {
+        grid-template-columns: 1fr;
+      }
+
+      section {
+        padding: 60px 6%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h2>NOMBRE DE LA PROFESIONAL</h2>
+    <nav>
+      <a href="#servicios">Servicios</a>
+      <a href="#sobre-mi">Sobre mí</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Gestoría integral para trámites del automotor y gestiones judiciales</h1>
+      <p>
+        Asesoramiento personalizado, seguimiento responsable y soluciones prácticas
+        para particulares, profesionales y empresas.
+      </p>
+      <a class="btn" href="https://wa.me/549TU_NUMERO_DE_WHATSAPP?text=Hola,%20quisiera%20hacer%20una%20consulta%20sobre%20sus%20servicios." target="_blank">
+        Consultar por WhatsApp
+      </a>
+    </div>
+  </section>
+
+  <section id="servicios">
+    <div class="section-title">
+      <h2>Servicios</h2>
+      <p>
+        Atención profesional en dos áreas principales: trámites registrales del automotor
+        y gestiones vinculadas al ámbito judicial.
+      </p>
+    </div>
+
+    <div class="cards">
+      <div class="card">
+        <h3>Mandataria del Automotor</h3>
+        <ul>
+          <li>Transferencias de autos, motos y maquinarias.</li>
+          <li>Informes de dominio e históricos.</li>
+          <li>Denuncias de venta, robo o extravío.</li>
+          <li>Duplicado de cédula, título y chapas.</li>
+          <li>Alta, baja y regularización registral.</li>
+          <li>Asesoramiento antes de comprar o vender.</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3>Gestora Judicial</h3>
+        <ul>
+          <li>Presentación y seguimiento de trámites judiciales.</li>
+          <li>Diligenciamiento de oficios, cédulas y mandamientos.</li>
+          <li>Gestiones ante organismos públicos y privados.</li>
+          <li>Retiro y presentación de documentación.</li>
+          <li>Tramitaciones administrativas vinculadas a expedientes.</li>
+          <li>Asistencia a estudios jurídicos y particulares.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="sobre-mi" class="about">
+    <div>
+      <h2>Atención seria, cercana y personalizada</h2>
+      <p>
+        Soy NOMBRE DE LA PROFESIONAL, mandataria del automotor y gestora judicial.
+        Trabajo acompañando a cada cliente con responsabilidad, claridad y compromiso.
+      </p>
+      <p>
+        Mi objetivo es simplificar trámites que muchas veces resultan complejos,
+        explicando cada paso y brindando una atención organizada desde la primera consulta.
+      </p>
+
+      <div class="highlight">
+        Atención en CIUDAD / PROVINCIA y consultas online para gestiones a distancia.
+      </div>
+    </div>
+
+    <div class="card">
+      <h3>¿Por qué consultar?</h3>
+      <ul>
+        <li>Evitar errores antes de iniciar un trámite.</li>
+        <li>Ahorrar tiempo en gestiones presenciales.</li>
+        <li>Contar con seguimiento personalizado.</li>
+        <li>Recibir asesoramiento claro y responsable.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="contacto" class="contact">
+    <h2>Consultá tu trámite</h2>
+    <p>
+      Escribime y contame qué gestión necesitás realizar. Te indico los pasos,
+      la documentación necesaria y la mejor forma de avanzar.
+    </p>
+
+    <a class="btn" href="https://wa.me/549TU_NUMERO_DE_WHATSAPP?text=Hola,%20quisiera%20hacer%20una%20consulta%20sobre%20una%20gesti%C3%B3n." target="_blank">
+      Enviar mensaje por WhatsApp
+    </a>
+  </section>
+
+  <footer>
+    © 2026 NOMBRE DE LA PROFESIONAL | Mandataria del Automotor & Gestora Judicial
+  </footer>
+
+</body>
+</html>
